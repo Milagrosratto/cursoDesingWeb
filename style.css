@@ -1,0 +1,149 @@
+*{
+  /*outline: 1px solid red;*/
+  margin: 0;
+  background: linear-gradient(to right,#ccb2e5 ,#b2c4e4,#b2c4e4,#b2c4e4,#b2c4e4, #b2c4e4);
+  
+  
+}
+.menu{
+  opacity: 0.97;
+  margin: 0 auto;
+  background: #fff;
+  display:flex;
+  justify-content: center ;
+  border-radius: 0px 0px 60px 60px;
+  width: 50%;
+  overflow: hidden;
+}
+.contenedor{
+  background: transparent;
+  margin: 20px;
+  padding: 5px;
+  
+}
+a{
+  background: transparent;
+ text-decoration: none;
+ color: black;
+ font-size: 17px; 
+ font-weight: 800;
+ font-family: 'Libre Baskerville', serif;
+}
+
+.console-container {
+ 
+  background: transparent;
+  font-family: 'Libre Baskerville', serif;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  background: transparent;
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+p, h1{
+  margin: 5px;
+  padding: 0;
+  font-family:'Libre Baskerville', serif;
+  color: #fff;
+  background: transparent;
+}
+h1{
+  font-size: 56px;
+}
+p{
+  font-size: 30px;
+}
+.portada, .container{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.columna{
+  width: 50%;
+  min-width: 350px;
+  height: 500px;
+  background: transparent;
+  margin: 0 auto;
+}
+.portada .img, .text{
+  margin: 30px auto;
+  background: transparent;
+  
+}
+.img{
+  width: 350px;
+  height: 400px;
+  border-radius: 20%;
+  overflow: hidden;
+}
+img{
+ height: 100%;
+ width: 100%;
+ margin: 0 auto;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background: transparent;
+ 
+}
+/*---------------MARIPOSA--------------------*/
+
+.mariposa{
+  height: 200px;
+  width: 350px;
+  background: transparent;
+  display: flex;
+}
+.mariposa div{
+    transform-origin : 100%;
+    animation-name: mariposa;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: transparent;
+}
+.mariposa div.ala-r{
+  transform-origin: 0;
+}
+.ala-r img{
+    transform: scaleX(-1);
+}
+@keyframes mariposa{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(40deg);
+  }
+}
+
+/*---------------MARIPOSA--------------------*/
+.container{
+  background: transparent;
+  margin-top: 20%;
+}
+div .text{
+  width: 60%;
+  margin: 0;
+}
+div .mariposa{
+  width: 40%;
+  min-width: 170px;
+  margin: 0 auto;
+}
+
+
