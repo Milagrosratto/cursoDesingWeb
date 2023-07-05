@@ -36,7 +36,7 @@ a{
 }
 p, h1{
   margin: 10px;
-  padding: 0;
+  padding: 0 10%;
   font-family:'Libre Baskerville', serif;
   color: #fff;
   background: transparent;
@@ -113,15 +113,31 @@ img{
 /*---------------MARIPOSA--------------------*/
 .container{
   background: transparent;
-  margin-top: 20%;
-}
-div .text{
-  width: 55%;
-  margin: 0;
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 div .mariposa{
-  width: 45%;
-  min-width: 170px;
+  width: 70%;
+  min-width: 150px;
+  margin: 0 auto;
+}
+div .mariposa.p{
+  width: 70px;
+  height: 70px;
+}
+#mari{
+  display: flex;
+}
+/*---------------MARIPOSA--------------------*/
+.container.colum{
+  width: 30%;
+  min-width: 200px;
+  max-width: 300px;
+}
+.container.colum.text{
   margin: 0 auto;
 }
 /*-----------------------Contacto------------------------*/
@@ -135,11 +151,8 @@ div .mariposa{
 .contacto .form, .contacto form, .form div, .form input, label{
   background: transparent;
 }
-.contacto .columna.w{
-  background-color: #fff;
-}
 .contacto .form form{
-  width: 90%;
+  width: 60%;
   min-width: 250px;
   display: block;
   text-align: center;
@@ -149,6 +162,11 @@ div .mariposa{
   font-size: 17px;
   color:#fff;
   outline: 0px;
+  background: #f097d7fc;
+  opacity: 0.8;
+  border-radius: 30px;
+  box-shadow: 0.3em 0.3em 1em #f3efefcc,
+              0.3em 0.3em 1em #f097d7fc;
 }
 .contacto .form input{
   display: block;
@@ -193,7 +211,21 @@ text-decoration: none;
 background: #606061fc;
 z-index: 1000;
 }
-
+/*-------------Boton de wsp------------------*/
+.contacto svg{
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+.contacto .icon, .contacto .iconos{
+  background: transparent;
+}
+.contacto .iconos{
+  display: flex;
+}
+.contacto .iconos div{
+  margin: 30px auto;
+}
 
 
 
