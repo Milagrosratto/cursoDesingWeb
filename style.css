@@ -1,9 +1,6 @@
 *{
-  /*outline: 1px solid red;*/
   margin: 0;
   background: #b2c4e4;
-
-  
 }
 header{
   margin: 0;
@@ -12,7 +9,6 @@ header{
   min-width: 450px;
 }
 .menu{
-
   opacity: 0.97;
   margin: 0 auto;
   background: #fff;
@@ -38,32 +34,6 @@ a{
  font-weight: 800;
  font-family: 'Libre Baskerville', serif;
 }
-
-.console-container {
- 
-  background: transparent;
-  font-family: 'Libre Baskerville', serif;
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-}
-.console-underscore {
-  background: transparent;
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
-}
-
 p, h1{
   margin: 10px;
   padding: 0;
@@ -157,11 +127,10 @@ div .mariposa{
 /*-----------------------Contacto------------------------*/
 .contacto{
   display: flex;
-  background: #ffb6c1;  /* fallback for old browsers */
+  background: #ffb6c1;
   background: -webkit-linear-gradient(to bottom,#b2c4e4, #ffb6c1);  
   background: linear-gradient(to bottom, #b2c4e4, #e680bb);
   flex-wrap: wrap;
-
 }
 .contacto .form, .contacto form, .form div, .form input, label{
   background: transparent;
