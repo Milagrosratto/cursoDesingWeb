@@ -21,10 +21,16 @@ header{
   flex-wrap: wrap;
 }
 .contenedor{
-  background: transparent;
+  background: #fccff3;
+  box-shadow: 0.3em 0.3em 1em #f097d7fc;
   margin: 20px 10%;
   padding: 5px;
+  border-radius: 20px;
   
+}
+.contenedor:hover{
+  background: #fff;
+  box-shadow: 0.3em 0.3em 1em #f274cffc;
 }
 a{
   background: transparent;
@@ -55,7 +61,7 @@ p{
 .columna{
   width: 50%;
   min-width: 450px;
-  height: 500px;
+  height: auto;
   background: transparent;
   margin: 0 auto;
 }
@@ -96,7 +102,7 @@ img{
     background: transparent;
 }
 .mariposa div.ala-r{
-  transform-origin: 0;
+  transform-origin:0;
 }
 .ala-r img{
     transform: scaleX(-1);
@@ -127,9 +133,29 @@ div .mariposa{
 div .mariposa.p{
   width: 70px;
   height: 70px;
+ }
+.mariposa.p.dist,  .mariposa.dist{
+  transform: rotate(-20deg);
 }
 #mari{
   display: flex;
+}
+.mariposa.p.dist div{
+    animation-name: mariposaDist;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: transparent;
+    
+}
+
+@keyframes mariposaDist{
+  from{
+    transform: rotateY(15deg);
+  }
+  to{
+    transform: rotateY(40deg);
+  }
 }
 /*---------------MARIPOSA--------------------*/
 .container.colum{
@@ -162,7 +188,7 @@ div .mariposa.p{
   font-size: 17px;
   color:#fff;
   outline: 0px;
-  background: #f097d7fc;
+  background: #958f93fc;
   opacity: 0.8;
   border-radius: 30px;
   box-shadow: 0.3em 0.3em 1em #f3efefcc,
@@ -227,6 +253,30 @@ z-index: 1000;
   margin: 30px auto;
 }
 
-
-
+/*-----------PROYECTOS-----------*/
+.proyectos{
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.proyecto{
+  background: linear-gradient(to right,#e680bb, #ffb6c1, #b2c4e4);
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  font-family:'Libre Baskerville', serif;
+  border-radius: 10px;
+}
+.proyecto img{
+  height: 60%;
+  border-radius: 10px;
+}
+.proyecto p{
+  font-size: 1em;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
 
