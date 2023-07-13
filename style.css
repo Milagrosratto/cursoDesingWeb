@@ -9,7 +9,6 @@ header{
   min-width: 450px;
 }
 .menu{
-  opacity: 0.97;
   margin: 0 auto;
   background: #fff;
   display:flex;
@@ -18,11 +17,11 @@ header{
   width: 60%;
   overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 .contenedor{
-  background: #fccff3;
-  box-shadow: 0.3em 0.3em 1em #f097d7fc;
+  background: #fff;
+  box-shadow: 0.3em 0.3em 1em #f3efef;
   margin: 20px 10%;
   padding: 5px;
   border-radius: 20px;
@@ -30,8 +29,10 @@ header{
 }
 .contenedor:hover{
   background: #fff;
-  box-shadow: 0.3em 0.3em 1em #f274cffc;
+  box-shadow: 0.3em 0.3em 1em #f18fd5fc;
+  transition: 1s;
 }
+
 a{
   background: transparent;
  text-decoration: none;
@@ -176,6 +177,7 @@ div .mariposa.p{
 }
 .contacto .form, .contacto form, .form div, .form input, label{
   background: transparent;
+  padding: 5px;
 }
 .contacto .form form{
   width: 60%;
@@ -202,18 +204,17 @@ div .mariposa.p{
   outline: 0px;
   
 }
-.contacto .button input{
-  margin-top: 30px;
-  opacity: 0.8;
-  background: #606061fc;
-  min-width: 100px;
-  min-height: 40px;
+button{
+
+  background: #3e3e3efc;
   border-radius: 10px;
+  padding: 16px 32px;
   border: none;
   cursor: pointer;
   color: #fff;
   font-family:'Libre Baskerville', serif;
 }
+
 /*--------------Boton wsp---------------------------------*/
 .btn-wsp{
 	position: fixed;
@@ -276,7 +277,90 @@ z-index: 1000;
 .proyecto p{
   font-size: 1em;
   color: black;
-  margin: 0;
+  margin:5px 0px;
   padding: 0;
 }
+/*------------SOBRE MI */
+.content{
+  position: relative;
+}
+.sobreMi{
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
 
+}
+.columnaL, .columnaD{
+  margin: 0;
+  background: white;
+}
+.columnaL p{
+ min-width: 300px;
+ margin: 5px auto;
+ padding:10px;
+ width: 70%;
+ background: #ffffff;
+ text-align: left;
+ color: black;
+ font-family: 'Libre Baskerville', serif;
+ font-size: 18px;
+}
+.columnaL .titulo{
+  font-family: 'Agdasima', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: left;
+  width: 70%;
+  color: #000000; 
+  border-color: black;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+.columnaL{
+  width: 70%;
+}
+.columnaL .conteText{
+  background: white;
+  margin: 10%;
+}
+.columnaD{
+  width:30%;
+  overflow: hidden;
+  min-width: 300px;
+  background: url(img/portafolio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:400px;
+  border-radius: 0px 0px 0px 50px;
+}
+.sobreMi::before{
+  opacity: 0.3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 100;
+  background: linear-gradient(45deg,
+  #ffffff,#b2c4e4, #ffb6c1, #eb1aeb,
+  #ffffff,#9cbdf6, #fc37aa, #fff
+  );
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+ }
+ 
+ @keyframes glowing {
+   0%{
+     background-position: 0 0;
+   }
+   50%{
+     background-position: 400% 0;
+   }
+   100%{
+     background-position: 0 0;
+   }
+ }
