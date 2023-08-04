@@ -381,3 +381,20 @@ z-index: 1000;
   list-style: none;
   margin: 10px;
 }
+.footer .uno li, .footer .dos li, .footer .tres li{
+  font-family: 'Agdasima', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  font-weight: bolder;
+  color: #000000; 
+  border-color: #b2c4e4;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+.footer .uno .titulo,
+ .footer .dos .titulo,
+  .footer .tres .titulo{
+    background: #b2c4e4;
+    border-radius: 20px;
+  }
