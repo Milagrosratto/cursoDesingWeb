@@ -158,6 +158,12 @@ div .mariposa.p{
     transform: rotateY(40deg);
   }
 }
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 1000px) {
+  #mariMobile {
+    display: none; /* Ocultamos el elemento en dispositivos móviles */
+  }
+}
 /*---------------MARIPOSA--------------------*/
 .container.colum{
   width: 30%;
