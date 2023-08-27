@@ -410,11 +410,12 @@ z-index: 1000;
   .tittleSkill{
     color: #fff;
     text-align: center;
-    font-size: 5em;
+    font-size: 3.5em;
     border-style: solid;
     border-color: #fff;
     border-width: 0px 0px 2px 0px;
     margin: 20px 25%;
+    font-family:'Libre Baskerville', serif;
    }
    
    .circle {
